@@ -1,0 +1,39 @@
+{
+  "name": "SolvedProblem",
+  "type": "object",
+  "properties": {
+    "problem_text": {
+      "type": "string",
+      "description": "The original math problem"
+    },
+    "solution": {
+      "type": "string",
+      "description": "The full step-by-step solution"
+    },
+    "topic": {
+      "type": "string",
+      "enum": [
+        "equations",
+        "fractions",
+        "proportions",
+        "percentages",
+        "powers",
+        "ratios",
+        "geometry",
+        "word_problems"
+      ],
+      "description": "Math topic category"
+    },
+    "grade": {
+      "type": "string",
+      "enum": [
+        "6",
+        "7"
+      ],
+      "description": "Grade level"
+    }
+  },
+  "required": [
+    "problem_text"
+  ]
+}
